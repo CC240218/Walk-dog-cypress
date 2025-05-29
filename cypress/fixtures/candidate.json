@@ -1,0 +1,29 @@
+
+
+{
+    "personal":{
+        "name": "John Doe",
+        "email": "teste@teste.com",
+        "cpf": "12345678901",
+        "cep": "53230670",
+        "addressStreet": "Praça Expedicionário Brasileiro",
+        "addressNumber": 123,
+        "addressDetails": "Apt 789",
+        "addressDistrict": "Jardim Brasil",
+        "addressCityUf": "Olinda/PE",
+        "activity1": "Cuidar",
+        "activity2": "Adestrar"
+    },
+
+    "PlaceHolder":{
+        "name": "Nome completo",
+        "email": "E-mail",
+        "cpf": "CPF somente números",
+        "cep": "CEP",
+        "adressStreet": "Rua",
+        "adressNumber": "Número",
+        "adressDetails": "Complemento",
+        "adressDistrict": "Bairro",
+        "adressCityUf": "Cidade/UF"
+    }
+}
