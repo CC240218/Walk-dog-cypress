@@ -25,5 +25,15 @@
         "adressDetails": "Complemento",
         "adressDistrict": "Bairro",
         "adressCityUf": "Cidade/UF"
+    },
+
+    "notification":{
+        "name": "Informe o seu nome completo",
+        "email": "Informe o seu melhor email",
+        "cpf": "Informe o seu CPF",
+        "cep1": "Informe o seu CEP",
+        "cep2": "Informe um CEP válido",
+        "addressNumber": "Informe um número maior que zero",
+        "file": "Adcione um documento com foto (RG ou CHN)"
     }
 }

@@ -12,6 +12,28 @@ describe('Formulario de cadastro Walkdog', () => {
     cy.fixture('candidate').then(candidate => {  data = candidate})
   });
 
+  context('Validação', () => {
+
+    it('Deve notificar quando os campos obrigatorios estão vazios', () => {
+
+      cy.Submit_form('Cadastrar');
+      cy.Alert_mensage(data.notification.name);
+      cy.Alert_mensage(data.notification.email);
+      cy.Alert_mensage(data.notification.cpf);
+      cy.Alert_mensage(data.notification.cep1);
+      cy.Alert_mensage(data.notification.addressNumber);
+      cy.Alert_mensage(data.notification.file);
+
+    });
+
+    it('Deve notificar um CEP invalido', () => {
+
+      cy.Type_text('cep', '1234');
+      cy.Button_click('Buscar CEP');
+      cy.Alert_mensage(data.notification.cep2);
+    });
+
+  });
 
   context('Dados', () => {
 
@@ -71,7 +93,7 @@ describe('Formulario de cadastro Walkdog', () => {
 
   context('submit form', () => {
 
-    it.only('Deve finalizar todo o cadastro', () => {
+    it('Deve finalizar todo o cadastro', () => {
 
       cy.Type_text('name', data.personal.name);
       cy.Type_text('email', data.personal.email);
@@ -91,5 +113,6 @@ describe('Formulario de cadastro Walkdog', () => {
       cy.noticeSubmit('Obrigado!');
     });
   });
+
 
 })

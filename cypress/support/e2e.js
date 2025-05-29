@@ -56,3 +56,8 @@ Cypress.Commands.add('noticeSubmit', (noticeText) => {
 
     cy.contains('h2', noticeText).should('be.visible');
 });
+
+Cypress.Commands.add('Alert_mensage', ( text) => {
+
+    cy.contains('.alert-error', text).should('be.visible');
+});
