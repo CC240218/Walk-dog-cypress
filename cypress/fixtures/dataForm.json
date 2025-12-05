@@ -1,0 +1,42 @@
+{
+    "person": {
+        "name": "Rafael Santos",
+        "email": "teste@teste.com.sr",
+        "cpf": "12345678910"
+    },
+    "address": {
+        "cep": "53230670",
+        "addressNumber": "136",
+        "addressDetails": "ap 202",
+        "addressStreet": "Praça Expedicionário Brasileiro",
+        "addressDistrict": "Jardim Brasil",
+        "addressCityUf": "Olinda/PE",
+        "btnCep": "Buscar CEP"
+    },
+    "file": {
+        "doc": "imgTest.png"
+    },
+    "fieldset": {
+        "titleData": "Dados",
+        "titleAdress": "Endereço",
+        "titleAtivities": "Atividades extras"
+    },
+    "activity": [
+        "Adestrar",
+        "Cuidar",
+        "Cuidar e Adestrar"
+    ],
+    "success": {
+        "sccTitle": "Obrigado!",
+        "sccText": "Recebemos o seu cadastro e em breve retornaremos o contato."
+    },
+    "alerts": {
+        "inptName": "Informe o seu nome completo",
+        "inptEmail": "Informe o seu melhor email",
+        "inptCpf": "Informe o seu CPF",
+        "inptNum": "Informe um número maior que zero",
+        "fileDoc": "Adcione um documento com foto (RG ou CHN)",
+        "inptCep": "Informe o seu CEP",
+        "invalCep": "Informe um CEP válido"
+    }
+}
