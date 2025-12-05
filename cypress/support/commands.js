@@ -40,8 +40,7 @@ Cypress.Commands.add('goToSignup', (titlePage) => {
 
 // ---------------------------- Localizadores da home  //
 Cypress.Commands.add('pageOn', () => {
-    cy.visit('https://walkdog.vercel.app/')
-
+    cy.visit(`/`)
 })
 Cypress.Commands.add('assrtBtnHome', (txtBtn) => {
     cy.contains('strong', txtBtn).should('be.visible')
@@ -157,7 +156,7 @@ Cypress.Commands.add('assertActivitiesSelected', (activSelect) => {
         cy.activiSelected(text2);
 
     } else {
-         cy.activiSelected(activSelect)
+        cy.activiSelected(activSelect)
     }
 })// -------------------------------------------------------------------------------------------s--------
 
@@ -175,4 +174,4 @@ Cypress.Commands.add('assertUploadFile', (fileName) => {
         .parent().within(() => {
             cy.get('img').should('exist').and('be.visible')
         })
-})
+})// ----------------------------------------------------------------------------------------------------

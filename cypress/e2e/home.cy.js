@@ -6,7 +6,7 @@ describe('template spec', () => {
     cy.pageOn()
     cy.logo();
     cy.assertTitle('Cuidado e diversão em cada passo')
-    cy.asstBtnHome('Quero ser Dog Walker');
+    cy.assrtBtnHome('Quero ser Dog Walker');
 
   })
 })

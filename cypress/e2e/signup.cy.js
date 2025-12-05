@@ -26,7 +26,7 @@ describe('pagina do formulario', () => {
             cy.submitSuccess(success.sccTitle, success.sccText)
         })
 
-    });
+    })
 
     context('DDT tests', () => {
 
@@ -63,12 +63,5 @@ describe('pagina do formulario', () => {
             cy.btnCEP(address.btnCep)
             cy.alertErr(alerts.invalCep)
         })
-
     })
-
-    // it.only('testLab', () => {
-    //     cy.assertUploadFile(file.doc)
-
-    // })
-
 })
